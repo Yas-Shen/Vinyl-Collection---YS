@@ -1,5 +1,9 @@
 <?php
-//set up db connection
+/**
+ * @param PDO $db the db conn
+ * @return string
+ */
+
 $servername = "localhost";
 $username = "root";
 $password = "password";
@@ -13,15 +17,15 @@ function retrieveDb(): PDO
 }
 
 $db = retrieveDb();
-//write sql stmnt and execute
+
 $query = "SELECT `image`, `artist`, `album`, `year`, `genre`, `label-released` FROM `vinyl-collection`;";
-//prepare the stmnt
+
 
 $stmnt = $db->prepare($query);
 
 $stmnt->execute();
 
-$result = $stmnt->fetchAll();
+$result = $stmnt->fetchAll ();
 
 echo '<pre>';
 var_dump($result);
