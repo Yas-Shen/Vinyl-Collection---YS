@@ -13,4 +13,30 @@ function retrieveDb(): PDO
     return $db;
 }
 
+/**
+ * @param PDO $db
+ * @return array
+ */
+function getVinylCollections(PDO $db): array
+{
+    $stmnt = $db->prepare("SELECT `image`, `artist`, `album`, `year`, `genre`, `label-released` FROM `vinyl-collection`");
+    $stmnt->execute();
+    return $stmnt->fetchAll();
+}
+
+function displayVinyl(array $vinylCollection): string
+{
+    $result = '';
+    foreach ($vinylCollection as $vinyl) {
+        $result .= '<div>' . $vinyl['image'] . '<br>' .
+            $vinyl['artist'] . '<br>' .
+            $vinyl['album'] . '<br>' .
+            $vinyl['year'] . '<br>' .
+            $vinyl['genre'] . '<br>' .
+            $vinyl['label-released'] . '</div>';
+    }
+    return $result;
+}
+
+
 ?>
