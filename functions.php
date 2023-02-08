@@ -26,17 +26,19 @@ function getVinylCollections(PDO $db): array
 
 function displayVinyl(array $vinylCollection): string
 {
-    $result = '';
+    $result = '<div class="container">';
     foreach ($vinylCollection as $vinyl) {
-        $result .= '<div>' . $vinyl['image'] . '<br>' .
-            $vinyl['artist'] . '<br>' .
-            $vinyl['album'] . '<br>' .
-            $vinyl['year'] . '<br>' .
-            $vinyl['genre'] . '<br>' .
-            $vinyl['label-released'] . '</div>';
+        $result .= '<div class="items">' .
+            '<img src="' . $vinyl['image'] . '"/>'.'<br>' .
+            '<h1>' . $vinyl['artist'] . '</h1>' . '<br>' .
+            '<h3>' . $vinyl['album'] . '</h3>' . '<br>' .
+            '<p class="year">' . $vinyl['year'] . '</p>' . '<br>' .
+            '<p class="genre">' . $vinyl['genre'] . '</p>' . '<br>' .
+            '<p class="label">' . $vinyl['label-released'] . '</p>' . '</div>';
     }
+    $result .= "</div>";
     return $result;
 }
 
-
 ?>
+
