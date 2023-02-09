@@ -23,5 +23,6 @@ $vinylHtml = displayVinyl($vinyl);
 <div class="container">
     <?php echo $vinylHtml; ?>
 </div>
+<footer>&#169 Copyright Yas Shenair </footer>
 </body>
 </html>
