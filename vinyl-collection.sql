@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.5-10.10.2-MariaDB-1:10.10.2+maria~ubu2204)
 # Database: vinyl-collection
-# Generation Time: 2023-02-06 13:58:54 +0000
+# Generation Time: 2023-02-09 14:37:34 +0000
 # ************************************************************
 
 
@@ -41,15 +41,15 @@ LOCK TABLES `vinyl-collection` WRITE;
 
 INSERT INTO `vinyl-collection` (`id`, `image`, `artist`, `album`, `year`, `genre`, `label-released`)
 VALUES
-	(1,'https://www.discogs.com/release/6907241-Anathema-A-Fine-Day-To-Exit-/image/SW1hZ2U6MTg5MDczNjA=','anathema','a fine day to exit','2001','prog rock','music for nations'),
-	(2,'https://www.discogs.com/release/1346051-Katatonia-Tonights-Decision/image/SW1hZ2U6MTg5MjM3MQ==','katatonia','tonight\'s decision','2007','goth rock','peaceville'),
-	(3,'https://www.discogs.com/master/158121-Snot-Get-Some/image/SW1hZ2U6MzU2MjA1OTM=','snot','get some','1996','hardcore punk','geffen'),
-	(4,'https://www.discogs.com/master/276793-Tura-Satana-Relief-Through-Release/image/SW1hZ2U6MzAyOTk0Nw==','tura satana','relief through release','1997','nu metal','noise records'),
-	(5,'https://www.discogs.com/master/1446149-The-Prodigy-No-Tourists/image/SW1hZ2U6MzcwMDc3ODc=','prodigy','no tourists','2018','drum & bass','bmg'),
-	(6,'https://www.discogs.com/master/21087-Tipper-Surrounded/image/SW1hZ2U6Mjg1NDE0NDI=','tipper','surrounded','2003','ambient prog','myutopia recordings'),
-	(7,'https://www.discogs.com/master/57960-Sepultura-Chaos-AD/image/SW1hZ2U6NTQyNzc4Nzk=','sepultura','chaos ad','1993','thrash','roadrunner records'),
-	(8,'https://www.discogs.com/master/460256-Streetlight-Manifesto-99-Songs-Of-Revolution-Volume-One/image/SW1hZ2U6MTkyODM1ODY=','streetlight manefesto','99 songs of revolution vol 1','2010','ska punk','victory, pentimento'),
-	(9,'https://www.discogs.com/master/51257-Dub-War-Pain/image/SW1hZ2U6MjA1NDc2MQ==','dub war','pain','1995','alternative rock','earache records');
+	(1,'anathema.png','Anathema','A Fine Day To Exit','2001','Prog Rock','Music For Nations'),
+	(2,'katatonia.png','Katatonia','Tonight\'s Decision','2007','Goth Rock','Peaceville'),
+	(3,'snot.png','Snot','Get Some','1996','Hardcore Punk','Geffen'),
+	(4,'turasatana.png','Tura Satana','Relief Through Release','1997','Nu Metal','Noise'),
+	(5,'prodigy.png','Prodigy','No Tourists','2018','Drum & Bass','BMG'),
+	(6,'tipper.png','Tipper','Surrounded','2003','Ambient Prog','Myutopia'),
+	(7,'sepultura.png','Sepultura','Chaos A.D','1993','Thrash','Roadrunner'),
+	(8,'sunna.png','Sunna','One Minute Science','2000','Downtempo Hardcore','Astralwerks'),
+	(9,'dubwar.png','Dub War','Pain','1995','Alternative Rock','Earache');
 
 /*!40000 ALTER TABLE `vinyl-collection` ENABLE KEYS */;
 UNLOCK TABLES;
