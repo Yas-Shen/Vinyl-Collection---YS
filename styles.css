@@ -92,6 +92,21 @@ footer {
     margin-bottom: 75%;
 }
 
+div.addItem {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15%;
+    top: 30%;
+    background-color: #16324f;
+    color: #ffffff;
+    height: 75%;
+    width: 75%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 1300px) {
 
     h1 {
